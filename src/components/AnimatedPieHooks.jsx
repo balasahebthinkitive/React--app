@@ -15,8 +15,7 @@ const Pie = props => {
   const colors = d3.scaleOrdinal(d3.schemeCategory10);
   const format = d3.format(".2f");
 
-  useEffect(
-    () => {
+  useEffect(() => {
       const data = createPie(props.data);
       const prevData = createPie(cache.current);
       const group = d3.select(ref.current);
@@ -64,7 +63,7 @@ const Pie = props => {
 
       cache.current = props.data;
     },
-    [props.data]
+    [colors, createArc, createPie, format, props.data]
   );
 
   return (

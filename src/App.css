@@ -7,6 +7,16 @@
 
 }
 
+
+span {
+  margin: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 120px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
