@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AnimatedPieHooks from './components/AnimatedPieHooks';
+import ChartNew from './components/ChartNew';
+import LineChart from './components/LineChart';
+import LinechartNew from './components/LinechartNew';
+import PeiChart from './components/PeiChart';
+import Chart from './components/ResponsiveBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <PeiChart />
+     <ChartNew />
+     <LinechartNew  height={400} width={400}/>
+     <LineChart />
+     <Chart />
+     <hr />
+     <AnimatedPieHooks />
     </div>
   );
 }
